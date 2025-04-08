@@ -1,0 +1,35 @@
+{
+  "stories": [
+    {
+      "id": "bailey",
+      "title": "Bailey the $WIENER on Kaspa",
+      "subtitle": "Bailey is the first $WIENER and the origin story. The genesis. Many other wieners will come after Bailey but she started this rocket ship for all the other dogs.",
+      "highlight": "Story",
+      "image": {
+        "src": "",
+        "fileName": "bailey2.jpg",
+        "alt": "Bailey the $WIENER",
+        "width": 767,
+        "height": 767,
+        "provider": "local",
+        "customClass": "h-auto w-full rounded-lg shadow-md"
+      }
+    },
+    {
+      "id": "kasper",
+      "title": "Kaspa the $WIENER on Bailey",
+      "subtitle": "Kaspa is the second $WIENER and",
+      "highlight": "Story",
+      "image": {
+        "src": "",
+        "fileName": "kaspa.jpg",
+        "alt": "Kaspa the $WIENER",
+        "width": 767,
+        "height": 767,
+        "provider": "cdn",
+        "cdnUrl": "https://fastly.picsum.photos/id/40/4106/2806.jpg?hmac=MY3ra98ut044LaWPEKwZowgydHZ_rZZUuOHrc3mL5mI",
+        "customClass": "h-auto w-full rounded-lg shadow-md"
+      }
+    }
+  ]
+}

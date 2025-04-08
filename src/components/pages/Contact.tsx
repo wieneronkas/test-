@@ -1,11 +1,16 @@
 import { component$ } from '@builder.io/qwik';
 import { PageWrapper2 } from '../common/PageWrapper2';
-import ContactForm from '../widgets/ContactForm';
+import { ContactContent } from '../common/ContactContent';
 
+/**
+ * Contact page component.
+ *
+ * - Provides a section for contact content.
+ * - Uses `ContactContent`, wrapped inside `PageWrapper2` for consistent layout.
+ * - Unlike `ContactHome.tsx`, this component is meant to be a section on the home page.
+ *
+ * @returns {JSX.Element} The rendered Contact page.
+ */
 export default component$(() => {
-  return (
-    <PageWrapper2>
-   <ContactForm/>
-</PageWrapper2>
-  );
+  return <ContactContent PageWrapperComponent={PageWrapper2} />;
 });

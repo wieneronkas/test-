@@ -1,6 +1,7 @@
 **/*.log
 **/.DS_Store
 *.
+License.md
 .vscode/settings.json
 .history
 .yarn

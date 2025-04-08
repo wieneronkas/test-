@@ -1,36 +1,16 @@
-import { component$ } from "@builder.io/qwik";
-import { PageWrapper } from "../common/PageWrapper";
-import { Headline } from "../ui/Headline";
+import { component$ } from '@builder.io/qwik';
+import { PageWrapper } from '../common/PageWrapper';
+import { TradeContent } from '../common/TradeContent';
 
+/**
+ * Trade page component.
+ *
+ * - Provides a **standalone** page for trade-related content.
+ * - Uses `TradeContent`, wrapped inside `PageWrapper` for consistent layout.
+ * - Unlike `TradeHome.tsx`, this component is meant to be a **dedicated page** rather than a section on the home page.
+ *
+ * @returns {JSX.Element} The rendered Trade page.
+ */
 export default component$(() => {
-    return (
-        <PageWrapper>
-            <div class="h-4"></div>
-            <Headline
-                title={"Trade WIENER"}
-                subtitle={"$WIENER can be traded on KaspaMarket, KaspaCom and KSPR Bot. Stay tuned for more exchanges coming soon!"}
-                highlight={"Exchanges"}
-            />
-            <div class="grid grid-cols-1 gap-5 md:grid-cols-3 pt-4 p-4">
-
-            <a href="https://kaspamarket.io/token/WIENER" target="_blank">
-                    <img width="540" height="540" src="/images/km.jpg" alt="Kaspa Market" class="w-full h-48 object-cover rounded-md hover:opacity-80" />
-                </a>
-
-                <a href="https://t.me/kspr_home_bot?start=WdRcvw" target="_blank">
-                    <img width="720" height="332" src="/images/ksprbot.png" alt="KSPR Bot" class="w-full h-48 object-cover rounded-md hover:opacity-80" />
-                </a>
-               
-                <a href="https://www.kaspa.com/marketplace/token/wiener?ref=wiener" target="_blank">
-                    <img width="540" height="540" src="/images/kaspacom.jpg" alt="Kaspiano" class="w-full h-48 object-cover rounded-md hover:opacity-80" />
-                </a>
-
-                {/* <a href="https://dapp.chainge.finance/?fromChain=KAS&toChain=KAS&fromToken=KAS&toToken=KOIN_krc20" target="_blank">
-                    <img width="2400" height="1260" src="/images/chainge.png" alt="Chainge" class="w-full h-48 object-cover rounded-md hover:opacity-80" />
-                </a> */}
-              
-
-            </div>
-        </PageWrapper>
-    );
+  return <TradeContent PageWrapperComponent={PageWrapper} />;
 });

@@ -1,0 +1,62 @@
+{
+  "headline": {
+    "title": "Get in Touch",
+    "subtitle": "Reach out to learn more and for project collaborations, Bailey will be glad to hear from you!",
+    "highlight": "Contact Us"
+  },
+  "contacts": [
+    {
+      "platform": "Telegram",
+      "icon": "telegram",
+      "href": "https://t.me/+Civ_RQYiZH03Y2I5"
+    },
+    {
+      "platform": "Twitter / X",
+      "icon": "twitter",
+      "href": "https://x.com/wienerKRC20"
+    },
+    {
+      "platform": "Email",
+      "icon": "email",
+      "href": "mailto:admin@wieneronkas.com"
+    }
+  ],
+  "formConfig": {
+    "button": {
+      "label": "Send message"
+    },
+    "fields": [
+      {
+        "id": "first-name",
+        "label": "Name",
+        "placeholder": "Satoshi",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "id": "last-name",
+        "label": "Project",
+        "placeholder": "$WIENER",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "id": "email",
+        "label": "Email",
+        "placeholder": "satoshi@kaspa.org",
+        "required": true,
+        "type": "email",
+        "colSpan": "full"
+      },
+      {
+        "id": "message",
+        "label": "Message",
+        "placeholder": "Leave Bailey a message :)",
+        "required": false,
+        "rows": 4,
+        "type": "textarea",
+        "colSpan": "full"
+      }
+    ]
+  }
+}

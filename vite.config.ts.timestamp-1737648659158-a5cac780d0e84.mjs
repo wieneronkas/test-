@@ -1,17 +1,17 @@
 // vite.config.ts
-import { defineConfig } from "file:///C:/Users/james/projects/adept/node_modules/vite/dist/node/index.js";
-import { qwikVite } from "file:///C:/Users/james/projects/adept/node_modules/@builder.io/qwik/dist/optimizer.mjs";
-import { qwikCity } from "file:///C:/Users/james/projects/adept/node_modules/@builder.io/qwik-city/lib/vite/index.mjs";
-import tsconfigPaths from "file:///C:/Users/james/projects/adept/node_modules/vite-tsconfig-paths/dist/index.js";
+import { defineConfig } from 'file:///C:/Users/james/projects/adept/node_modules/vite/dist/node/index.js';
+import { qwikVite } from 'file:///C:/Users/james/projects/adept/node_modules/@builder.io/qwik/dist/optimizer.mjs';
+import { qwikCity } from 'file:///C:/Users/james/projects/adept/node_modules/@builder.io/qwik-city/lib/vite/index.mjs';
+import tsconfigPaths from 'file:///C:/Users/james/projects/adept/node_modules/vite-tsconfig-paths/dist/index.js';
 
 // src/config.mjs
 var SITE = {
-  name: "WIENER",
-  title: "WIENER \u2014 Bailey the WIENER on Kaspa.",
-  description: "WIENER \u2014 Bailey the WIENER on Kaspa.",
-  origin: "https://wieneronkas.com",
-  basePathname: "/",
-  trailingSlash: true
+  name: 'WIENER',
+  title: 'WIENER \u2014 Bailey the WIENER on Kaspa.',
+  description: 'WIENER \u2014 Bailey the WIENER on Kaspa.',
+  origin: 'https://wieneronkas.com',
+  basePathname: '/',
+  trailingSlash: true,
 };
 
 // vite.config.ts
@@ -20,19 +20,17 @@ var vite_config_default = defineConfig(() => {
     base: SITE.basePathname,
     plugins: [
       qwikCity({
-        trailingSlash: SITE.trailingSlash
+        trailingSlash: SITE.trailingSlash,
       }),
       qwikVite(),
-      tsconfigPaths()
+      tsconfigPaths(),
     ],
     preview: {
       headers: {
-        "Cache-Control": "public, max-age=600"
-      }
-    }
+        'Cache-Control': 'public, max-age=600',
+      },
+    },
   };
 });
-export {
-  vite_config_default as default
-};
+export { vite_config_default as default };
 //# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcudHMiLCAic3JjL2NvbmZpZy5tanMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCJDOlxcXFxVc2Vyc1xcXFxqYW1lc1xcXFxwcm9qZWN0c1xcXFxhZGVwdFwiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9maWxlbmFtZSA9IFwiQzpcXFxcVXNlcnNcXFxcamFtZXNcXFxccHJvamVjdHNcXFxcYWRlcHRcXFxcdml0ZS5jb25maWcudHNcIjtjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfaW1wb3J0X21ldGFfdXJsID0gXCJmaWxlOi8vL0M6L1VzZXJzL2phbWVzL3Byb2plY3RzL2FkZXB0L3ZpdGUuY29uZmlnLnRzXCI7aW1wb3J0IHsgZGVmaW5lQ29uZmlnIH0gZnJvbSAndml0ZSc7XHJcbmltcG9ydCB7IHF3aWtWaXRlIH0gZnJvbSAnQGJ1aWxkZXIuaW8vcXdpay9vcHRpbWl6ZXInO1xyXG5pbXBvcnQgeyBxd2lrQ2l0eSB9IGZyb20gJ0BidWlsZGVyLmlvL3F3aWstY2l0eS92aXRlJztcclxuaW1wb3J0IHRzY29uZmlnUGF0aHMgZnJvbSAndml0ZS10c2NvbmZpZy1wYXRocyc7XHJcblxyXG5pbXBvcnQgeyBTSVRFIH0gZnJvbSAnLi9zcmMvY29uZmlnLm1qcyc7XHJcblxyXG5leHBvcnQgZGVmYXVsdCBkZWZpbmVDb25maWcoKCkgPT4ge1xyXG4gICAgcmV0dXJuIHtcclxuICAgICAgICBiYXNlOiBTSVRFLmJhc2VQYXRobmFtZSxcclxuICAgICAgICBwbHVnaW5zOiBbXHJcbiAgICAgICAgICAgIHF3aWtDaXR5KHtcclxuICAgICAgICAgICAgICAgIHRyYWlsaW5nU2xhc2g6IFNJVEUudHJhaWxpbmdTbGFzaCxcclxuICAgICAgICAgICAgfSksXHJcbiAgICAgICAgICAgIHF3aWtWaXRlKCksXHJcbiAgICAgICAgICAgIHRzY29uZmlnUGF0aHMoKSxcclxuICAgICAgICBdLFxyXG4gICAgICAgIHByZXZpZXc6IHtcclxuICAgICAgICAgICAgaGVhZGVyczoge1xyXG4gICAgICAgICAgICAgICAgJ0NhY2hlLUNvbnRyb2wnOiAncHVibGljLCBtYXgtYWdlPTYwMCcsXHJcbiAgICAgICAgICAgIH0sXHJcbiAgICAgICAgfVxyXG4gICAgfTtcclxufSk7XHJcbiIsICJjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfZGlybmFtZSA9IFwiQzpcXFxcVXNlcnNcXFxcamFtZXNcXFxccHJvamVjdHNcXFxcYWRlcHRcXFxcc3JjXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ZpbGVuYW1lID0gXCJDOlxcXFxVc2Vyc1xcXFxqYW1lc1xcXFxwcm9qZWN0c1xcXFxhZGVwdFxcXFxzcmNcXFxcY29uZmlnLm1qc1wiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9pbXBvcnRfbWV0YV91cmwgPSBcImZpbGU6Ly8vQzovVXNlcnMvamFtZXMvcHJvamVjdHMvYWRlcHQvc3JjL2NvbmZpZy5tanNcIjtleHBvcnQgY29uc3QgU0lURSA9IHtcclxuICBuYW1lOiBcIldlYmRldi5jYVwiLFxyXG5cclxuICB0aXRsZTpcclxuICAgIFwiV2ViZGV2LmNhIFx1MjAxNCBQcmVtaXVtIFdlYnNpdGUgRGVzaWduICYgRGV2ZWxvcG1lbnQgU2VydmljZXMuXCIsXHJcbiAgZGVzY3JpcHRpb246XHJcbiAgICBcIldlYmRldi5jYSBcdTIwMTQgVHJhbnNmb3JtIHlvdXIgb25saW5lIHByZXNlbmNlIHdpdGggb3VyIGN1c3RvbSB3ZWIgZGVzaWduIGFuZCBkZXZlbG9wbWVudCBzZXJ2aWNlcy4gV2UgaGVscCBidXNpbmVzc2VzIGNyZWF0ZSBzdHVubmluZywgZmFzdCwgYW5kIHNlY3VyZSB3ZWJzaXRlcy5cIixcclxuXHJcbiAgb3JpZ2luOiBcImh0dHBzOi8vcXdpbmQucGFnZXMuZGV2XCIsXHJcbiAgYmFzZVBhdGhuYW1lOiBcIi9cIixcclxuICB0cmFpbGluZ1NsYXNoOiB0cnVlLFxyXG59O1xyXG4iXSwKICAibWFwcGluZ3MiOiAiO0FBQW1SLFNBQVMsb0JBQW9CO0FBQ2hULFNBQVMsZ0JBQWdCO0FBQ3pCLFNBQVMsZ0JBQWdCO0FBQ3pCLE9BQU8sbUJBQW1COzs7QUNIc1EsSUFBTSxPQUFPO0FBQUEsRUFDM1MsTUFBTTtBQUFBLEVBRU4sT0FDRTtBQUFBLEVBQ0YsYUFDRTtBQUFBLEVBRUYsUUFBUTtBQUFBLEVBQ1IsY0FBYztBQUFBLEVBQ2QsZUFBZTtBQUNqQjs7O0FESkEsSUFBTyxzQkFBUSxhQUFhLE1BQU07QUFDOUIsU0FBTztBQUFBLElBQ0gsTUFBTSxLQUFLO0FBQUEsSUFDWCxTQUFTO0FBQUEsTUFDTCxTQUFTO0FBQUEsUUFDTCxlQUFlLEtBQUs7QUFBQSxNQUN4QixDQUFDO0FBQUEsTUFDRCxTQUFTO0FBQUEsTUFDVCxjQUFjO0FBQUEsSUFDbEI7QUFBQSxJQUNBLFNBQVM7QUFBQSxNQUNMLFNBQVM7QUFBQSxRQUNMLGlCQUFpQjtBQUFBLE1BQ3JCO0FBQUEsSUFDSjtBQUFBLEVBQ0o7QUFDSixDQUFDOyIsCiAgIm5hbWVzIjogW10KfQo=

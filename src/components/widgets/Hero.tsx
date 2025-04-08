@@ -1,80 +1,69 @@
-import { component$ } from "@builder.io/qwik";
-import { Image } from "@unpic/qwik";
-
+import { component$ } from '@builder.io/qwik';
+import { Image } from '@unpic/qwik';
+import { siteContent } from '~/data/site';
+import { iconMap } from '../icons/iconMap';
+import { HeroButton } from './HeroButton';
+import { Anchor } from '../ui/Anchor';
 
 export default component$(() => {
+  const { brand, hero } = siteContent;
+  const IconChevronRight = iconMap['chevronRight'];
+
   return (
-    <div class="relative bg-white/80 dark:bg-gray-900/80 overflow-hidden flex items-center justify-center mx-1.5 mt-1 mb-2 border-radius-dot-25 rounded-lg">
-
-      <section class="relative rounded-lg  md:-mt-[76px] not-prose mx-1.5 my-1.5 bg-white/70 dark:bg-gray-900/75 border-radius-dot-25">
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-10 ">
-          <div class="pt-0 md:pt-[60px] pointer-events-none"></div>
-          <div class="pt-6 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen lg:gap-8">
-            <div class="basis-1/2 text-center lg:text-left pb-8 md:pb-16 mx-auto">
-              <a href="https://kaspamarket.io/token/WIENER" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
-                <span class="text-xs bg-primary-400 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span class="text-sm font-medium">$WIENER live on KaspaMarket!</span>
-                <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-              </a>
-              <h1 class="text-5xl md:text-7xl font-bold leading-tighter tracking-tighter text-primary mb-4 font-heading dark:text-gray-200">
-
-                <span class="text-primary">Bailey <span class="text-primary-300">the Kaspian</span> WIENER</span>
+    <div class='border-radius-dot-25 relative mx-1.5 mb-2 mt-1 flex items-center justify-center overflow-hidden rounded-lg bg-white/80 dark:bg-gray-900/80'>
+      <section class='not-prose border-radius-dot-25 relative m-1.5 rounded-lg bg-white/70 dark:bg-gray-900/75 md:mt-[-76px]'>
+        <div class='relative mx-auto max-w-7xl px-4 sm:px-10'>
+          <div class='pointer-events-none pt-0 md:pt-[60px]'></div>
+          <div class='pt-6 md:py-20 lg:flex lg:h-screen lg:items-center lg:gap-8 lg:py-0'>
+            <div class='mx-auto basis-1/2 pb-8 text-center md:pb-16 lg:text-left'>
+              <Anchor
+                href={brand.tokenUrl}
+                class='mb-4 inline-flex items-center justify-between rounded-full bg-gray-100 p-1 pr-4 text-sm text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700'
+                role='alert'
+              >
+                <span class='mr-3 rounded-full bg-primary-400 px-4 py-1.5 text-xs text-white'>
+                  {hero.alert.label}
+                </span>{' '}
+                <span class='text-sm font-medium'>{hero.alert.text}</span>
+                <IconChevronRight class='ml-2 size-5' />
+              </Anchor>
+              <h1 class='leading-tighter font-heading mb-4 text-5xl font-bold tracking-tighter text-primary dark:text-gray-200 md:text-7xl'>
+                <span class='text-primary'>
+                  {hero.title.pre}{' '}
+                  <span class='text-primary-300'>{hero.title.highlight}</span>{' '}
+                  {hero.title.post}
+                </span>
               </h1>
-              <div class="max-w-3xl mx-auto lg:max-w-none">
-                <p class="text-xl mb-6 dark:text-slate-300">
-                Join the fun with $WIENER— the top dog on the Kaspa chain. Fast, fun, and ready for the next big trend.                </p>
+              <div class='mx-auto max-w-3xl lg:max-w-none'>
+                <p class='mb-6 text-xl dark:text-slate-300'>
+                  {brand.description}{' '}
+                </p>
 
-                <div class=" sm:max-w-md m-auto grid grid-cols-2 border-radius-dot-25 gap-3 sm:grid-cols-2 lg:grid-cols-2 lg:max-w-7xl">
-                  <a href="https://x.com/wienerKRC20">
-                    <div class="flex w-full">
-
-                      <button class="btn w-full bg-primary-300 dark:bg-primary-700 py-2 rounded-md ">
-                        Follow on X
-                      </button>
-
-                    </div>
-                  </a>
-                  <a href="https://t.me/+Civ_RQYiZH03Y2I5">
-                    <div class="flex w-full">
-
-                      <button class="btn w-full bg-primary-200 dark:bg-primary-600 py-2 rounded-md ">
-                        Join Telegram
-                      </button>
-
-                    </div>
-                  </a>
-                  <a href="/images/WIENER-WHITEPAPER.pdf" download="WIENER-WHITEPAPER.pdf">
-                    <div class="flex w-full">
-
-                      <button class="btn w-full bg-primary-100 dark:bg-primary-500 py-2 rounded-md ">
-                        Whitepaper
-                      </button>
-
-                    </div>
-                  </a>
-                  <a href="https://kas.fyi/token/krc20/WIENER">
-                    <div class="flex w-full">
-
-                      <button class="btn w-full bg-primary-400 py-2 rounded-md ">
-                        Mint $WIENER
-                      </button>
-
-                    </div>
-                  </a>
+                {/* CTA button section */}
+                <div class='border-radius-dot-25 m-auto grid grid-cols-2 gap-3 sm:max-w-md sm:grid-cols-2 lg:max-w-7xl lg:grid-cols-2'>
+                  {hero.buttons?.map((btn) => (
+                    <HeroButton
+                      key={btn.label}
+                      href={btn.url}
+                      label={btn.label}
+                      style={btn.style}
+                      download={btn.fileName}
+                    />
+                  ))}
                 </div>
               </div>
             </div>
-
-            <div class="basis-1/2 pb-10">
+            <div class='basis-1/2 pb-10'>
               <Image
-                 src="/images/logo.jpg"
-              layout="constrained"
-              width={500}
-              height={500}
-              alt="Qwind Hero Image (Cools dog)"
-              class="mx-auto lg:mr-0 object-fit w-full drop-shadow-2xl rounded-md"
-              priority={true}
-              breakpoints={[320, 480, 640, 768, 1024]}
-            />
+                src={hero.image.src}
+                layout={hero.image.layout}
+                width={hero.image.width}
+                height={hero.image.height}
+                alt={hero.image.alt}
+                class='object-fit mx-auto w-full rounded-md drop-shadow-2xl lg:mr-0'
+                priority={hero.image.priority}
+                breakpoints={hero.image.breakpoints}
+              />
             </div>
           </div>
         </div>

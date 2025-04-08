@@ -1,11 +1,15 @@
-import { component$, useStyles$ } from "@builder.io/qwik";
-import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from "@builder.io/qwik-city";
+import { component$, useStyles$ } from '@builder.io/qwik';
+import {
+  QwikCityProvider,
+  RouterOutlet,
+  ServiceWorkerRegister,
+} from '@builder.io/qwik-city';
 
-import { RouterHead } from "~/components/common/RouterHead";
-import { DarkThemeLauncher } from "~/components/common/DarkThemeLauncher";
+import { RouterHead } from '~/components/common/RouterHead';
+import { DarkThemeLauncher } from '~/components/common/DarkThemeLauncher';
 
 // import "@fontsource-variable/inter";
-import styles from  "~/assets/styles/global.css?inline";
+import styles from '~/assets/styles/global.css?inline';
 
 export default component$(() => {
   /**
@@ -20,14 +24,14 @@ export default component$(() => {
   return (
     <QwikCityProvider>
       <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="manifest" href="/manifest.json" />
+        <meta charset='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel='manifest' href='/manifest.json' />
         <RouterHead />
         <DarkThemeLauncher />
         <ServiceWorkerRegister />
       </head>
-      <body class="text-gray-900 overflow-x-hidden dark:text-slate-300 tracking-tight bg-white dark:bg-gray-900 antialiased">
+      <body class='overflow-x-hidden bg-white tracking-tight text-gray-900 antialiased dark:bg-gray-900 dark:text-slate-300'>
         <RouterOutlet />
       </body>
     </QwikCityProvider>

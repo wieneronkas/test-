@@ -1,0 +1,47 @@
+{
+  "title": "$WIENER Roadmap",
+  "highlight": "Roadmap",
+  "itemTitle": "Our Process: From Idea to Finished Print",
+  "items": [
+    {
+      "id": "1",
+      "title": "2025 Q1: Token Launch and Online Presence",
+      "description": "Deploy $WIENER token, mint initial supplies, and secure our first exchange listings. Grow the project with active community outreach to build awareness.",
+      "icon": "star"
+    },
+    {
+      "id": "2",
+      "title": "2025 Q2: Community Engagement",
+      "description": "Focus on community voting and launch the Content Creator Support Initiative to amplify outreach.",
+      "icon": "star"
+    },
+    {
+      "id": "3",
+      "title": "2025 Q3: NFT Launch and Partnerships",
+      "description": "Roll out NFTs using the KRC721 standard. Build strategic partnerships and identify talent to scale the project further.",
+      "icon": "star"
+    },
+    {
+      "id": "4",
+      "title": "2025 Q4: Community Rewards and Year Review",
+      "description": "Host the Economic Mission Contest and the 'Make The World A Better Place' showcase. Wrap up the year with a review and celebrate progress with the community.",
+      "icon": "star"
+    },
+    {
+      "id": "5",
+      "title": "2026: Global Impact and Future Planning",
+      "description": "Research global opportunity gaps, form partnerships with organizations like the United Nations and World Economic Forum, and host the Meme of the Year Rewards. Reevaluate the project and plan for the next phase.",
+      "icon": "star"
+    }
+  ],
+  "image": {
+    "src": "",
+    "fileName": "roadmap2.jpg",
+    "alt": "Roadmap",
+    "width": 767,
+    "height": 767,
+    "provider": "local",
+    "layout": "constrained",
+    "customClass": "h-auto w-full rounded-lg shadow-md"
+  }
+}

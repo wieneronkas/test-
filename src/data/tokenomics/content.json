@@ -1,0 +1,33 @@
+{
+  "title": "Token Statistics",
+  "subtitle": "WIENER launched fairly with a strong community from the beginning during mint.",
+  "highlight": "Tokenomics",
+  "image": {
+    "id": 1,
+    "src": "",
+    "fileName": "tokenomics.jpg",
+    "alt": "Tokenomics",
+    "width": 767,
+    "height": 767,
+    "provider": "local",
+    "customClass": "h-auto w-full rounded-lg shadow-md"
+  },
+  "stats": [
+    {
+      "value": "100%",
+      "label": "Fair Launch"
+    },
+    {
+      "value": "1 Billion",
+      "label": "Total Supply"
+    },
+    {
+      "value": "0.1%",
+      "label": "Team Allocation"
+    },
+    {
+      "value": "100+",
+      "label": "Community Members"
+    }
+  ]
+}
